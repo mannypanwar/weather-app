@@ -21,7 +21,7 @@ export default function Weather(props) {
             <img className="img-shadow" src={icoLink} alt="weather-icon" />
           )}
           <h1 className="text-shadow">
-            {props.clicked ? props.weather.main.temp : null}°
+            {props.clicked ? props.weather.main.temp + "°" : null}
           </h1>
         </div>
       </div>

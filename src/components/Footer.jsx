@@ -7,7 +7,7 @@ export default function Footer() {
         <h4 className="footer-h">Built on React using open weather API</h4>
       </div>
 
-      <a href="/">
+      <a href="https://github.com/mannypanwar/weather-app">
         <img src="images/github.png" alt="github" />
       </a>
     </section>

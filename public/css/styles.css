@@ -31,6 +31,7 @@ body {
 }
 .search {
   background-color: #dddddd;
+  padding: 0.5rem;
 }
 .search-bar {
   display: flex;

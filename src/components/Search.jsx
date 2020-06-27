@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Weather from "./Weather";
 
 export default function Search() {
@@ -20,17 +20,18 @@ export default function Search() {
           key +
           "&units=metric"
       )
-        .then(function(resp) {
+        .then(function (resp) {
           return resp.json();
         }) // Convert data to json
-        .then(function(data) {
+        .then(function (data) {
           setWeather(data);
           setClicked(true);
         })
-        .catch(function(err) {
+        .catch(function (err) {
           console.log(err);
         });
     }
+
     weatherBalloon(text);
     event.preventDefault();
   }

@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function Weather(props) {
+  console.log(props);
+
   let ico = "10d";
   if (props.clicked === true) {
     ico = props.weather.weather[0].icon;
@@ -23,6 +25,25 @@ export default function Weather(props) {
           <h1 className="text-shadow">
             {props.clicked ? props.weather.main.temp + "°" : null}
           </h1>
+        </div>
+        <div
+          className="other-temp"
+          style={{ display: props.clicked ? "flex" : "none" }}
+        >
+          <div className="max-min">
+            <h4> Max</h4>
+            <p>
+              <i className="fas fa-temperature-high"> </i>
+              {props.clicked ? " " + props.weather.main.temp_max + "°" : null}
+            </p>
+          </div>
+          <div className="max-min">
+            <h4> Min</h4>
+            <p>
+              <i className="fas fa-temperature-low"> </i>
+              {props.clicked ? " " + props.weather.main.temp_min + "°" : null}
+            </p>
+          </div>
         </div>
       </div>
     </section>

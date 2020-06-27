@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function Weather(props) {
-  console.log(props);
-
   let ico = "10d";
   if (props.clicked === true) {
     ico = props.weather.weather[0].icon;

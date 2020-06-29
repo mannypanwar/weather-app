@@ -2,7 +2,7 @@
 
 # Weather App
 
-Weather app is for seraching current weather, It provides current temp with max and min temperature.
+Weather app is for searching current weather, It provides current temp with max and min temperature.
 
 Link [👨‍💻](https://m-weather.netlify.app/)
 

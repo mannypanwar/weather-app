@@ -54,7 +54,9 @@ export default function Search() {
           </div>
         </form>
       </section>
-      <Weather weather={weather} clicked={clicked} />
+      <section className="weather">
+        {clicked && <Weather weather={weather} clicked={clicked} />}
+      </section>
     </>
   );
 }

@@ -18,6 +18,7 @@ Search the name of city.
 - OpenWeatherMaps API [🔗](https://openweathermap.org/api)
 - Bootstrap [🔗](https://getbootstrap.com/)
 - FontAwesome [🔗](https://fontawesome.com/)
+- Gsap [🔗](https://greensock.com/gsap/)
 
 ## Learning
 
